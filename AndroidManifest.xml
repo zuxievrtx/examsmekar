@@ -11,9 +11,17 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application android:debuggable="false" android:icon="@mipmap/ic_launcher" android:label="SMKN 1 DUKUHTURI" android:name="com.google.appinventor.components.runtime.multidex.MultiDexApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="io.kodular.gurubkmtsn13jkt.smkn1dukuhturi.url" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden">
+        <activity 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:exported="true"
+            android:name="io.kodular.gurubkmtsn13jkt.smkn1dukuhturi.Screen1"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden"
+            android:immersive="true"
+            android:fullscreen="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="io.kodular.gurubkmtsn13jkt.smkn1dukuhturi.about" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden">

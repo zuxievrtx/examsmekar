@@ -2254,6 +2254,27 @@
 
 # virtual methods
 .method public $define()V
+    .locals 4
+    
+    .prologue
+    invoke-virtual {p0}, Lio/kodular/gurubkmtsn13jkt/smkn1dukuhturi/Screen1;->getWindow()Landroid/view/Window;
+    move-result-object v0
+    
+    const/16 v1, 0x400
+    or-int/2addr v1, 0x800
+    invoke-virtual {v0, v1}, Landroid/view/Window;->addFlags(I)V
+    
+    const/16 v1, 0x1000
+    invoke-virtual {v0, v1}, Landroid/view/Window;->addFlags(I)V
+    
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    move-result-object v1
+    const/16 v2, 0x1706
+    invoke-virtual {v1, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    const/4 v1, 0x1
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setFlags(II)V
+
     .locals 9
 
     .line 10288
